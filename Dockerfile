@@ -4,8 +4,8 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 ENV PATH /usr/src/app/node_module/.bin:$PATH
-ENV http_proxy="http://proxyseso.scania.com:8080"
-ENV https_proxy="http://proxyseso.scania.com:8080"
+# ENV http_proxy="http://proxyseso.scania.com:8080"
+# ENV https_proxy="http://proxyseso.scania.com:8080"
 
 
 COPY package*.json /usr/src/app/
