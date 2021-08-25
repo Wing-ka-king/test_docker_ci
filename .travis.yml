@@ -7,10 +7,10 @@ script:
   - docker images mannydesigns/node
 
 before_deploy:
-  - docker login -u singhakash1298 -p iitr1298a
+  - docker login -u singhakash1298  -p iitr1298a
 
 deploy:
   provider: script
-  script: docker push singhakash1298/node
+  script: docker push mannydesigns/node
   on:
     branch: master
